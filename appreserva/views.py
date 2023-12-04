@@ -15,4 +15,4 @@ def reserva_aula(request):
             return redirect('lista_aulas')  
     else:
         form = ReservaAulaForm()
-    return render(request, 'appreserva/reserva_aulas.html', {'form': form})
+    return render(request, 'appreserva/reserva_aula.html', {'form': form})
