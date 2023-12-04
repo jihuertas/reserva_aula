@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de Aulas</title>
+</head>
+<body>
+    <h1>Lista de Aulas Disponibles</h1>
+    <ul>
+        {% for aula in aulas %}
+            <li>{{ aula.nombre }} - Capacidad: {{ aula.capacidad }}</li>
+            <!-- Puedes añadir más detalles del aula si lo deseas -->
+        {% endfor %}
+    </ul>
+    <a href="{% url 'reserva_aula' %}">Reservar Aula</a>
+</body>
+</html>
